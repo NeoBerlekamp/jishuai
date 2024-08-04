@@ -1,1 +1,1 @@
-# JISHUAI-AI
+# JishuaiAssistant
