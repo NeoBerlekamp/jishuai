@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>集帅助手</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        padding-top: 76px;
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .card {
+        height: 100%;
+        margin-bottom: 20px;
+      }
+
+      .navbar {
+        padding: 15px 0;
+        background-color: white !important;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .hero-section {
+        background-color: #f8f9fa;
+        padding: 100px 0;
+        text-align: center;
+      }
+
+      .contact-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .card {
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">集帅助手</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#home">首页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">关于我们</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">产品服务</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">联系我们</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- 首页横幅 -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <h1 class="display-4 mb-4">欢迎访问集帅助手</h1>
+        <p class="lead mb-4">为您提供优质的产品和服务</p>
+        <a href="#products" class="btn btn-primary btn-lg">了解更多</a>
+      </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="bg-white">
+      <div class="container">
+        <h2 class="text-center mb-5">关于我们</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="p-4 bg-light rounded">
+              <h3 class="mb-4">产品简介</h3>
+              <p class="lead">
+                集帅助手是一款创新的AI聊天助手和智能键盘的结合体，专为解决情感问题而设计。
+              </p>
+              <p>
+                无论是生活中的烦恼、情感上的困惑，还是对人际关系的思考，集帅助手都能提供即时的支持和专业的建议。
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 产品服务 -->
+    <section id="products" class="bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5">产品服务</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title">AI聊天助手</h5>
+                <p class="card-text">
+                  通过智能对话，用户可以匿名分享自己的情感困扰，集帅助手将利用自然语言处理技术，提供个性化的建议和解决方案。
+                </p>
+                <a href="#" class="btn btn-primary">了解更多</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title">智能键盘</h5>
+                <p class="card-text">
+                  内置情感分析功能，可以在用户打字时实时识别情绪，提供适当的表情、短语和建议，帮助用户更好地表达自己的感受。
+                </p>
+                <a href="#" class="btn btn-primary">了解更多</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card shadow h-100">
+              <div class="card-body">
+                <h5 class="card-title">情感教育</h5>
+                <p class="card-text">
+                  集帅助手还提供丰富的情感教育内容，帮助用户提高情感智力，改善人际关系。
+                </p>
+                <a href="#" class="btn btn-primary">了解更多</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="text-center mb-5">联系我们</h2>
+        <div class="contact-container">
+          <form class="bg-light p-5 rounded shadow">
+            <div class="mb-3">
+              <label for="name" class="form-label">姓名</label>
+              <input type="text" class="form-control" id="name" required />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">邮箱</label>
+              <input type="email" class="form-control" id="email" required />
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">留言内容</label>
+              <textarea
+                class="form-control"
+                id="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">提交</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="bg-dark text-light py-4 mt-4">
+      <div class="container text-center">
+        <p class="mb-0">© 2024 集帅助手. 版权所有</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
